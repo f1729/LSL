@@ -2,6 +2,7 @@
 list slides = ["slide1","slide2","slide3"];
 list frases = ["frase 1","frase 2","frase 3"];
 integer index;
+integer indexfrases;
 
 
 newSlide()
@@ -21,7 +22,8 @@ default
 {
     state_entry()
     {
-        llSetTimerEvent(5);
+		//Tempo do timer
+        llSetTimerEvent(15);
         index = 0;
         newSlide();
     }
